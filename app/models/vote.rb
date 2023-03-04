@@ -1,4 +1,4 @@
-class Watch < ApplicationRecord
+class Vote < ApplicationRecord
     belongs_to :user
     belongs_to :post
 end

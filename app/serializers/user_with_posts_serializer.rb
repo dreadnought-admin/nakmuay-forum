@@ -1,3 +1,4 @@
 class UserWithPostsSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :username, :email, :role
+  has_many :posts, dependent: :destroy
 end
