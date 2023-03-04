@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  mount ActionCable.server => "/cable"
+
+
   #posts and users
   resources :posts
   resources :users
