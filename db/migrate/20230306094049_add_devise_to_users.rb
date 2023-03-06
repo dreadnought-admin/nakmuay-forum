@@ -26,7 +26,7 @@ class AddDeviseToUsers < ActiveRecord::Migration[7.0]
       t.string :username
       t.string :bio
       t.string :avatar, default: "https://i.imgur.com/kdJvj5l.png"
-      t.string :roll, default: "user"
+      t.string :role, default: "user"
 
       ## Confirmable
       # t.string   :confirmation_token
