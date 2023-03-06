@@ -1,19 +1,26 @@
-puts "Generating categories..."
+require 'faker'
 
-puts "Categories created!"
+# puts "Generating categories..."
 
-puts "Creating users..."
+# puts "Categories created!"
 
-puts "Users created!"
+# puts "Creating users..."
 
-puts "Sampling posts..."
+# puts "Users created!"
 
-puts "Posts sampled!"
+# puts "Sampling posts..."
 
-puts "Sampling some watches..."
+# puts "Posts sampled!"
 
-puts "Watches created!"
+# puts "Sampling some watches..."
 
-puts "Adding in some likes..."
+# puts "Watches created!"
 
-puts "Likes added!"
+# puts "Adding in some likes..."
+
+# puts "Likes added!"
+
+10.times do
+    User.create!(username: Faker::Internet.username, bio: nil, password: Faker::Internet.password, 
+    email: Faker::Internet.email)
+end 

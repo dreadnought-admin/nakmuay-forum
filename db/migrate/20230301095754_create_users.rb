@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.string :avatar, default: "https://i.imgur.com/kdJvj5l.png"
       t.string :password_digest
       t.string :email
-      .string :roll, default: "user"
+      t.string :role, default: "user"
       t.timestamps
     end
   end
